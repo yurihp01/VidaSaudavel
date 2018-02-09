@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#4682B4"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.yurip.livehealth.view.AboutActivity">
 
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="350dp"
+        android:importantForAccessibility="no"
         android:scaleType="fitXY"
-        android:src="@drawable/doctor"/>
+        android:src="@drawable/doctor" />
+
+    <TextView
+        android:id="@+id/about_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_app"
+        android:contentDescription="@string/about_app"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/about_app_text"/>
 
     <TextView
         android:id="@+id/about_app_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="20dp"
         android:text="@string/app_description"
-        android:textColor="#000"
+        android:contentDescription="@string/app_description"
+        android:textColor="#FFF"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="232dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
 </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

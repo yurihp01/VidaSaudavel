@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">LiveHealth</string>
-    <string name="app_description">Este aplicativo foi desenvolvido pelo aluno do Instituto Federal de Educação, Ciência e tecnologia de São Paulo, Campus Campinas, na qual tem como objetivo auxiliar pessoas com dados acerca de doenças, como também disponilizar através de um GPS os hospitais e farmácias mais próximos de sua localidade atual.</string>
+    <string name="app_description">Este aplicativo foi desenvolvido pelo aluno Yuri Henrique
+        Pedroso do Instituto Federal de Educação, Ciência e tecnologia de São Paulo,
+        Campus Campinas, na qual tem como objetivo auxiliar pessoas com dados acerca
+        de doenças, como também disponilizar através de um GPS os hospitais e
+        farmácias mais próximos de sua localidade atual.</string>
+    <string name="about_app">Sobre o Aplicativo</string>
 </resources>
