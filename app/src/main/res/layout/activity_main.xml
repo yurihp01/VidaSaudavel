@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yurip.livehealth.view.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fFFFFF">
+
+    <ImageView
+        android:id="@+id/background_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/doctor"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Health"
+        app:layout_constraintEnd_toEndOf="@id/background_doctor"
+        app:layout_constraintStart_toStartOf="@id/background_doctor"
+        app:layout_constraintTop_toTopOf="@id/background_doctor"
+        app:layout_constraintBottom_toBottomOf="@id/background_doctor"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintVertical_bias="0.5"
+        android:textSize="40sp"/>
+
+    <Button
+        android:id="@+id/list_disease"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_lista"
+        app:layout_constraintBottom_toTopOf="@id/list_disease_text"
+        app:layout_constraintEnd_toStartOf="@id/about_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/background_doctor" />
+
+    <TextView
+        android:id="@+id/list_disease_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Doenças"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/list_disease"
+        app:layout_constraintEnd_toEndOf="@id/list_disease"
+        app:layout_constraintTop_toBottomOf="@id/list_disease"
+        app:layout_constraintBottom_toTopOf="@id/nearest_hospital"/>
+
+    <Button
+        android:id="@+id/about_app"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/list_disease"
+        app:layout_constraintTop_toBottomOf="@id/background_doctor"
+        app:layout_constraintBottom_toTopOf="@id/about_app_text"/>
+
+
+    <TextView
+        android:id="@+id/about_app_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/about_app"
+        app:layout_constraintEnd_toEndOf="@id/about_app"
+        app:layout_constraintTop_toBottomOf="@id/about_app"
+        app:layout_constraintBottom_toTopOf="@id/contact"/>
+
+    <Button
+        android:id="@+id/nearest_hospital"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_hosp"
+        app:layout_constraintBottom_toTopOf="@id/nearest_hospital_text"
+        app:layout_constraintEnd_toStartOf="@id/contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_disease_text" />
+
+
+    <TextView
+        android:id="@+id/nearest_hospital_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Hospitais"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/nearest_hospital"
+        app:layout_constraintEnd_toEndOf="@id/nearest_hospital"
+        app:layout_constraintTop_toBottomOf="@id/nearest_hospital"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_contact"
+        app:layout_constraintTop_toBottomOf="@id/about_app_text"
+        app:layout_constraintBottom_toTopOf="@id/contact_text"
+        app:layout_constraintStart_toEndOf="@id/nearest_hospital"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/contact_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Contato"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/contact"
+        app:layout_constraintEnd_toEndOf="@id/contact"
+        app:layout_constraintTop_toBottomOf="@id/contact"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
