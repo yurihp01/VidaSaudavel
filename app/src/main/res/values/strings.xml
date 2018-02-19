@@ -6,4 +6,10 @@
         de doenças como também disponilizar através de um GPS os hospitais e
         farmácias mais próximos de sua localidade atual.</string>
     <string name="about_app">Sobre o Aplicativo</string>
+    <string name="app_title">Live Health</string>
+    <string name="disease_list">Listar Doenças</string>
+    <string name="about">Sobre</string>
+    <string name="hospitals">Hospitais</string>
+    <string name="contact">Contato</string>
+    <string name="app_resume">Aplicativo Live Health que auxilia sobre dados de doenças.</string>
 </resources>
