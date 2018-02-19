@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4682B4"
+    android:background="@color/papayawhip"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.yurip.livehealth.view.AboutActivity">
-
 
 <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
@@ -16,38 +15,43 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="@dimen/dp_300"
         android:importantForAccessibility="no"
-        android:scaleType="fitXY"
-        android:src="@drawable/doctor" />
+        android:scaleType="centerCrop"
+        android:background="@drawable/background_about_app" />
 
     <TextView
         android:id="@+id/about_app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
         android:text="@string/about_app"
+        android:fontFamily="sans-serif-smallcaps"
         android:contentDescription="@string/about_app"
-        android:textColor="#000"
-        android:textSize="30sp"
-        app:layout_constraintHorizontal_bias="0.7"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_30"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintBottom_toTopOf="@id/about_app_text"/>
 
     <TextView
         android:id="@+id/about_app_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:layout_marginTop="@dimen/dp_40"
+        android:padding="@dimen/dp_20"
         android:text="@string/app_description"
         android:contentDescription="@string/app_description"
-        android:textColor="#FFF"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        android:fontFamily="sans-serif-smallcaps"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+        app:layout_constraintTop_toBottomOf="@+id/about_app_title"/>
 </android.support.constraint.ConstraintLayout>
 
 </ScrollView>

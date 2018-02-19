@@ -16,11 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.SplashActivity_" />
+        <activity android:name=".view.SplashActivity" />
         <activity android:name=".view.ListActivity_" />
-        <activity android:name=".view.AboutActivity" />
-        <activity android:name=".view.ContactActivity" />
-        <activity android:name=".view.HospitalActivity"></activity>
+        <activity android:name=".view.AboutActivity_" />
+        <activity android:name=".view.ContactActivity_" />
+        <activity android:name=".view.HospitalActivity_"></activity>
     </application>
 
 </manifest>
