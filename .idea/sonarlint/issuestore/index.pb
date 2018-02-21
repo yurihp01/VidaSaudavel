@@ -66,3 +66,5 @@ S
 #app/src/main/res/values/strings.xml,d/2/d2281fbb3027de2722081a53408dd77628bf080e
 Z
 *app/src/main/res/layout/activity_about.xml,3/c/3c43631e616b476fe00dee37e22250f89f742beb
+R
+"app/src/main/res/values/dimens.xml,c/3/c3c1811dec2dbad2deeafb9aad505ca9631da740

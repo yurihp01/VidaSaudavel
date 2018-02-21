@@ -12,4 +12,7 @@
     <string name="hospitals">Hospitais</string>
     <string name="contact">Contato</string>
     <string name="app_resume">Aplicativo Live Health que auxilia sobre dados de doenças.</string>
+    <string name="contact_doubt_suggestion">Dúvidas ou Sugestões? Envie-nos, teremos
+        prazer em respondê-los!</string>
+    <string name="send">Enviar</string>
 </resources>
