@@ -1,5 +1,6 @@
 package com.example.yurip.livehealth.view;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.yurip.livehealth.R;
@@ -32,12 +33,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Click(R.id.nearest_hospital)
     void OnClickedNearestHospital()  {
-        HospitalActivity_.intent(this).start();
+        startActivity(new Intent(MainActivity.this, HospitalActivity.class));
+
     }
 
     @Click(R.id.nearest_hospital_text)
     void OnClickedNearestHospitalText() {
-        HospitalActivity_.intent(this).start();
+        startActivity(new Intent(MainActivity.this, HospitalActivity.class));
     }
 
     @Click(R.id.contact)

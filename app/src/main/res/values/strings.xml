@@ -15,4 +15,6 @@
     <string name="contact_doubt_suggestion">Dúvidas ou Sugestões? Envie-nos, teremos
         prazer em respondê-los!</string>
     <string name="send">Enviar</string>
+    <string name="radius_kilometer">Hospitais e Farmácias no raio de 10 KM</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
