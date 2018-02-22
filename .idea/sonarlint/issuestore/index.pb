@@ -68,3 +68,5 @@ Z
 *app/src/main/res/layout/activity_about.xml,3/c/3c43631e616b476fe00dee37e22250f89f742beb
 R
 "app/src/main/res/values/dimens.xml,c/3/c3c1811dec2dbad2deeafb9aad505ca9631da740
+T
+$app/src/main/res/drawable/border.xml,9/2/927357214e239a307ed0db06d4605b263a4fd674
