@@ -1,3 +1,19 @@
 
-csquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(„“Ê«
-\squid:UselessImportCheck".Remove this unused import 'android.os.Bundle'.(°şÊóøÿÿÿÿ8Ú×ü°—,
+gsquid:UselessImportCheck"?Remove this unused import 'android.support.annotation.NonNull'.(¼Åß8ÀôÑ–œ,
+[squid:UselessImportCheck"-Remove this unused import 'android.Manifest'.(¦øïúÿÿÿÿ8ÀôÑ–œ,
+gsquid:UselessImportCheck"9Remove this unused import 'android.os.PersistableBundle'.(Ñƒ¨’øÿÿÿÿ8—µşó›,
+nsquid:UselessImportCheck"@Remove this unused import 'android.support.annotation.Nullable'.(Ö‹øïüÿÿÿÿ8ÀôÑ–œ,
+csquid:UselessImportCheck"5Remove this unused import 'android.location.Address'.(ˆùÄ©úÿÿÿÿ8ÄÀò÷›,
+[squid:S1068"?Remove this unused "fusedLocationProviderClient" private field.(«¾Ææ8Ğè–œ,
+esquid:UnusedPrivateMethod"6Remove this unused private "getDeviceLocation" method.(–üê–ÿÿÿÿÿ8œ­Ó–œ,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(´ÂÜÇ8ÀôÑ–œ,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ªù¡¸şÿÿÿÿ8ÀôÑ–œ,
+osquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(Êä²Úûÿÿÿÿ8ÀôÑ–œ,
+dsquid:UselessImportCheck"6Remove this unused import 'android.location.Geocoder'.(¼ö„øÿÿÿÿ8ÄÀò÷›,
+wsquid:UselessImportCheck"IRemove this unused import 'org.androidannotations.annotations.EActivity'.(œèÓŒşÿÿÿÿ8ÀôÑ–œ,
+psquid:UselessImportCheck"BRemove this unused import 'android.support.v4.app.ActivityCompat'.(Äüşÿÿÿÿ8–Ğ•÷›,
+lsquid:UselessImportCheck">Remove this unused import 'android.content.pm.PackageManager'.(€®¥õÿÿÿÿÿ8ÀôÑ–œ,
+ssquid:UselessImportCheck"JRemove this unused import 'android.support.annotation.RequiresPermission'.(÷×®¥8ùŸ‰ï›,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(áøµë8ÀôÑ–œ,
+ssquid:UselessImportCheck"ERemove this unused import 'android.support.v7.app.AppCompatActivity'.(«Û®ûüÿÿÿÿ8ÀôÑ–œ,
+†squid:S1450"jRemove the "fusedLocationProviderClient" field and declare it as a local variable in the relevant methods.(«¾Ææ8€ë–œ,
