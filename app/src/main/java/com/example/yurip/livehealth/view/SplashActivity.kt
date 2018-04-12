@@ -6,7 +6,7 @@ import android.os.Bundle
 
 import com.example.yurip.livehealth.R
 
-class SplashActivity : Activity() {
+open class SplashActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
