@@ -1,24 +1,12 @@
 
 P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
-w
-Gapp/src/main/java/com/example/yurip/livehealth/view/SplashActivity.java,b/7/b751c97d255cc1f6fced83fba273b5070415017d
-u
-Eapp/src/main/java/com/example/yurip/livehealth/view/ListActivity.java,7/e/7ee2b920196eacbe24e8e2973ff6fb9fe228955b
-u
-Eapp/src/main/java/com/example/yurip/livehealth/view/MainActivity.java,6/c/6c1f9edc92e4466a2778df93a262c202d87927f6
 ?
 settings.gradle,0/5/05efc8b1657769a27696d478ded1e95f38737233
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 @
 app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
-y
-Iapp/src/main/java/com/example/yurip/livehealth/view/HospitalActivity.java,1/9/1907ae4375e73b0b1c15965055e425e86a75df67
-x
-Happ/src/main/java/com/example/yurip/livehealth/view/ContactActivity.java,4/d/4d116d419c7192e2024e075956205345a8c9b143
-v
-Fapp/src/main/java/com/example/yurip/livehealth/view/AboutActivity.java,6/3/63ff6e96bff37eda328fe56c145c187623bb802b
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -74,5 +62,17 @@ $app/src/main/res/drawable/border.xml,9/2/927357214e239a307ed0db06d4605b263a4fd
 +app/src/main/res/values/google_maps_api.xml,b/2/b242c47dc39a3e2d9442ed4a614f19cd6901e5cf
 ^
 .app/src/release/res/values/google_maps_api.xml,8/a/8ad28fcd8d693ab58d4fdb7d36965532163ebfa3
-Y
-)app/src/main/res/layout/activity_maps.xml,7/7/773a0511f0fbef0bddfce437cffca83a066ef58c
+q
+Aapp/src/main/java/com/example/yurip/livehealth/view/DataParser.kt,b/b/bb8c5e523d3bddbd38204141a206223d4a9b367d
+s
+Capp/src/main/java/com/example/yurip/livehealth/view/ListActivity.kt,d/f/df87e00d95b821358e9ca1f6785e6702ad1ad797
+s
+Capp/src/main/java/com/example/yurip/livehealth/view/MainActivity.kt,5/c/5c14430127fc994f5b9e77bbc34248decf0af9d7
+v
+Fapp/src/main/java/com/example/yurip/livehealth/view/ContactActivity.kt,9/3/93085accf9b1debacad086b0e1aabea9fe56c25d
+z
+Japp/src/main/java/com/example/yurip/livehealth/view/GetNearbyPlacesData.kt,a/8/a8bb4466dfef657df9aed32736ecaab6b112be7d
+r
+Bapp/src/main/java/com/example/yurip/livehealth/view/DownloadURL.kt,2/9/29366dafd80a0b48c7efdfa97207adf4b46936e0
+w
+Gapp/src/main/java/com/example/yurip/livehealth/view/HospitalActivity.kt,6/f/6f786baa4855b4dd5a53c4510114971988e89b4e
