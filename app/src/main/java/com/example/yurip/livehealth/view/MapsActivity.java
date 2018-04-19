@@ -107,11 +107,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
         final Object dataTransfer[] = new Object[2];
-        final GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
         Button btnDrugstore = findViewById(R.id.btnDrugstore);
         btnDrugstore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
                 mMap.clear();
                 String drugstore = "farmácia";
                 String url = getUrl(latitude, longitude, drugstore);
@@ -126,6 +126,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btnHospital.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
                 mMap.clear();
                 String hospital = "hospital";
                 String url = getUrl(latitude, longitude, hospital);
