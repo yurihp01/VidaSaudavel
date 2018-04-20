@@ -3,8 +3,6 @@ package com.example.yurip.livehealth.view;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,7 +15,6 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.yurip.livehealth.R;
@@ -34,9 +31,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import java.io.IOException;
-import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -106,36 +100,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             buildGoogleApiClient();
             mMap.setMyLocationEnabled(true);
         }
-        final Object dataTransfer[] = new Object[2];
-        Button btnDrugstore = findViewById(R.id.btnDrugstore);
-        btnDrugstore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
-                mMap.clear();
-                String drugstore = "farmácia";
-                String url = getUrl(latitude, longitude, drugstore);
-                dataTransfer[0] = mMap;
-                dataTransfer[1] = url;
-
-                getNearbyPlacesData.execute(dataTransfer);
-            }
-        });
-
-        Button btnHospital = findViewById(R.id.btnHospital);
-        btnHospital.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
-                mMap.clear();
-                String hospital = "hospital";
-                String url = getUrl(latitude, longitude, hospital);
-                dataTransfer[0] = mMap;
-                dataTransfer[1] = url;
-
-                getNearbyPlacesData.execute(dataTransfer);
-            }
-        });
     }
 
 
@@ -158,11 +122,42 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(latLng);
-        markerOptions.title("Current Location");
+        markerOptions.title("Minha Localização");
         markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
         currentLocationmMarker = mMap.addMarker(markerOptions);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         mMap.animateCamera(CameraUpdateFactory.zoomBy(10));
+
+        final Object dataTransfer[] = new Object[2];
+        Button btnDrugstore = findViewById(R.id.btnDrugstore);
+        btnDrugstore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
+                mMap.clear();
+                String pharmacy = "droga";
+                String url = getUrl(latitude, longitude, pharmacy);
+                dataTransfer[0] = mMap;
+                dataTransfer[1] = url;
+
+                getNearbyPlacesData.execute(dataTransfer);
+            }
+        });
+
+        Button btnHospital = findViewById(R.id.btnHospital);
+        btnHospital.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
+                mMap.clear();
+                String hospital = "hospitais";
+                String url = getUrl(latitude, longitude, hospital);
+                dataTransfer[0] = mMap;
+                dataTransfer[1] = url;
+
+                getNearbyPlacesData.execute(dataTransfer);
+            }
+        });
 
         if (client != null) {
             LocationServices.FusedLocationApi.removeLocationUpdates(client, this);
@@ -172,11 +167,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private String getUrl(double latitude, double longitude, String nearbyPlace) {
 
         StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
-        googlePlaceUrl.append("location=" + latitude + "," + longitude);
-        googlePlaceUrl.append("&radius=" + PROXIMITY_RADIUS);
-        googlePlaceUrl.append("&type=" + nearbyPlace);
+        googlePlaceUrl.append("location=").append(latitude).append(",").append(longitude);
+        googlePlaceUrl.append("&radius=").append(PROXIMITY_RADIUS);
         googlePlaceUrl.append("&sensor=true");
-        googlePlaceUrl.append("&key=" + getResources().getString(R.string.google_maps_key));
+        googlePlaceUrl.append("&keyword=").append(nearbyPlace);
+        googlePlaceUrl.append("&key=").append(getResources().getString(R.string.google_maps_key));
 
         Log.d("MapsActivity", "url = " + googlePlaceUrl.toString());
 
