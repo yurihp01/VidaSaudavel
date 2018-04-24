@@ -1,4 +1,4 @@
-package com.example.yurip.livehealth.view;
+package com.example.yurip.livehealth.view.activity;
 
 import android.Manifest;
 import android.content.Context;

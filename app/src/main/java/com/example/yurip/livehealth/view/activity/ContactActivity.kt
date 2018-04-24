@@ -1,4 +1,4 @@
-package com.example.yurip.livehealth.view
+package com.example.yurip.livehealth.view.activity
 
 import android.support.v7.app.AppCompatActivity
 

@@ -1,8 +1,10 @@
-package com.example.yurip.livehealth.view;
+package com.example.yurip.livehealth.view.activity;
 
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.example.yurip.livehealth.view.DataParser;
+import com.example.yurip.livehealth.view.DownloadURL;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;

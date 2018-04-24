@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.example.yurip.livehealth.view.ContactActivity">
+    tools:context="com.example.yurip.livehealth.view.activity.ContactActivity">
 
     <android.support.constraint.Guideline
         android:id="@+id/guidev"

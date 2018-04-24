@@ -1,4 +1,4 @@
-package com.example.yurip.livehealth.view
+package com.example.yurip.livehealth.view.activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -13,12 +13,12 @@ open class MainActivity : AppCompatActivity() {
 
     @Click(R.id.list_disease)
     open fun onClickedListDisease() {
-        ListActivity_.intent(this).start()
+        startActivity(Intent(this, ListActivity::class.java))
     }
 
     @Click(R.id.list_disease_text)
     open fun onClickedListDiseaseText() {
-        ListActivity_.intent(this).start()
+        startActivity(Intent(this, ListActivity::class.java))
     }
 
     @Click(R.id.about_app)
